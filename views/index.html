@@ -1,32 +1,28 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="hey fill me in">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en" ng-app="goat-tracker">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>GOAT TRACKER 95!</title>
+  <title>GOAT TRACKER 95!</title>
 
-    <!-- STYLESHEETS -->
-    <link rel="stylesheet" href="/vendor/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/styles/styles.css">
+  <!-- STYLESHEETS -->
+  <link rel="stylesheet" href="/styles/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="/styles/styles.css">
 
-    <!-- VENDOR SCRIPTS -->
-    <script src="/vendor/angular/angular.min.js"></script>
-    <script src="/vendor/angular-route/angular-route.min.js"></script>
+  <!-- VENDOR SCRIPTS -->
+  <script src="/vendor/angular/angular.min.js"></script>
+  <script src="/vendor/angular-route/angular-route.min.js"></script>
 
-    <!-- APPLICATION SCRIPTS -->
-    <script src="/scripts/app.js"></script>
-    <script src="/scripts/controllers/GoatsIndexController.js"></script>
+  <!-- APPLICATION SCRIPTS -->
+  <script src="/scripts/app.js"></script>
+  <script src="/scripts/controllers/GoatsIndexController.js"></script>
 
-  </head>
-  <body>
-    <div class="jumbotron">
-      <div class="container">
-        <h1>GOAT TRACKER 95</h1>
-      </div>
+</head>
+<body>
+    <div class="container">
+      <h1>GOAT TRACKER 95</h1>
+      <div ng-view></div>
     </div>
-
-    <div><!-- THE TEMPLATES SHOULD RENDER INTO THIS DIV --></div>
-  </body>
-
+</body>
 </html>
