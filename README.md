@@ -19,6 +19,7 @@
 1. npm install
 1. bower install
 1. Start the node server `nodemon server.js` - you'll only use this to serve your app.
+1. Visit `http://localhost:3000`
 
 ## Instructions
 
@@ -52,7 +53,26 @@ Add a show page for each goat.  It should be displayed at a URL like `localhost:
 
 ## Stretch Challenges
 
+Feel free to choose any of the following challenges:
+
+#### CRUD challenge
+
+**Create:** Add a way to submit a new goat.  The API is restful and will respond correctly to `POST /api/goats`.  
+
+* Your form, and page can look however you want.  
+* Display the created goat OR re-display the index page after creation.
+
+**Delete:** Next add a way to remove a goat.
+
+* Add a button to the goats-show page to send a delete request.
+* Display the index page after a successful delete.
+
+**Update:** Allow users to submit updates.
+
+
 #### Mapping challenge
+
+This is an ADVANCED challenge.
 
 Let's track the location of our goats and learn about integrating google maps with angular.  
 
