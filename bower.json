@@ -1,0 +1,26 @@
+{
+  "name": "goat_tracker_95",
+  "version": "0.0.2",
+  "authors": [
+    "tgaff <tgaff@alumni.nd.edu>"
+  ],
+  "keywords": [
+    "goat"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "resolutions": {
+    "angular": "~1.5.4"
+  },
+  "dependencies": {
+    "angular": "~1.5.4",
+    "angular-route": "~1.5.3",
+    "bootstrap": "~3.3.6"
+  }
+}

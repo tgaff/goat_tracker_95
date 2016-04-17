@@ -1,0 +1,27 @@
+{
+  "name": "goat_tracker_95",
+  "version": "0.0.2",
+  "description": "goat tracker 95",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/tgaff/goat_tracker_95.git"
+  },
+  "keywords": [
+    "goats"
+  ],
+  "author": "tgaff",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tgaff/goat_tracker_95/issues"
+  },
+  "homepage": "https://github.com/tgaff/goat_tracker_95#readme",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "bower": "^1.7.9",
+    "express": "^4.13.4"
+  }
+}
