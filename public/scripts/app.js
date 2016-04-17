@@ -4,14 +4,13 @@ angular
 
 function config ($routeProvider, $locationProvider) {
   $routeProvider
-    .when('/', {
+    .when('/', {redirectTo: '/goats'})
+    .when('/goats', {
       templateUrl: 'templates/goats-index.html',
       controllerAs: 'goatsIndexCtrl',
       controller: 'GoatsIndexController'
     })
-    .otherwise('/404', {
-      template: "<h1>Oops! this page doesn't exist yet!</h1>"
-    });
+    .otherwise({redirectTo: '/'});
 
     $locationProvider.html5Mode({
       enabled: true,
