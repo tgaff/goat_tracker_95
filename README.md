@@ -1,5 +1,3 @@
-# Goat-tracker 95
-
 <img src="/docs/images/screenshot.png" style="max-width: 400"></img>
 
 ### tools needed
@@ -15,7 +13,7 @@
 
 
 
-## Getting started
+# Getting started
 
 1. Fork & clone the lab.
 1. npm install
@@ -23,12 +21,12 @@
 1. Start the node server `nodemon server.js` - you'll only use this to serve your app.
 1. Visit `http://localhost:3000`
 
-## Instructions
+# Instructions
 
 You'll be constructing pages for the RESTful API at [http://goats-api.herokuapp.com/api/goats](http://goats-api.herokuapp.com/api/goats).  You may want to familiarize yourself with it's endpoint.
 
 
-#### GoatsIndex
+## GoatsIndex
 
 First off we'll create an index page.
 
@@ -43,7 +41,7 @@ First off we'll create an index page.
 
 Once you have this working and all the goats show on the page, proceed to work on the GoatsShow route.
 
-#### GoatsShow
+## GoatsShow
 
 Add a show page for each goat.  It should be displayed at a URL like `localhost:3000/goats/34`.
 
@@ -53,11 +51,11 @@ Add a show page for each goat.  It should be displayed at a URL like `localhost:
 1. Design a template that displays the details retrieved from the server.
 1. Add a button or link to go back to the index page.  
 
-## Stretch Challenges
+# Stretch Challenges
 
 Feel free to choose any of the following challenges:
 
-#### Filter challenge
+## Filter challenge
 
 Tools used:
 * ng-model
@@ -66,7 +64,7 @@ Tools used:
 On the goats index page add a search box. Allow goats to be filtered by name (or any other characteristic).
 
 
-#### CRUD challenge
+## CRUD challenge
 
 **Create:** Add a way to submit a new goat.  The API is restful and will respond correctly to `POST /api/goats`.  
 
@@ -81,7 +79,7 @@ On the goats index page add a search box. Allow goats to be filtered by name (or
 **Update:** Allow users to submit updates.
 
 
-#### Mapping challenge
+## Mapping challenge
 
 This is an ADVANCED challenge.
 
@@ -95,7 +93,7 @@ Tools used:
 * ui-gmap-google
 * ui-gmap-marker
 
-##### Display a map
+#### Display a map
 
 1. Let's install the required libraries using bower.  `bower install --save angular-google-maps`
 
@@ -158,7 +156,7 @@ Tools used:
 1. You should be able to see the map now.  Try visiting the page.  It should be centered on Satir, Morocco.
   * If not inspect the errors, documentation and solutions.
 
-##### Next we need to get the Goat latitude and longitude and display each one on the map.  
+#### Next we need to get the Goat latitude and longitude and display each one on the map.  
 
 
 1. Let's start by adding just one goat.  We can use the [`ui-gmap-marker` directive](https://angular-ui.github.io/angular-google-maps/#!/api/marker) for to put a marker on the map.  Hardcode the following *single* marker inside your google-map.
