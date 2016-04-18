@@ -135,9 +135,17 @@ Tools used:
       <ui-gmap-google-map center="ADD mapCenter HERE" zoom="ADD mapZoom HERE">
 	```
   * Fill in the center and zoom, accessing this data from the controller.
-	
+
+  > Note that the directive's attributes take expressions; you don't need to use `{{ ... }}`
+
+1. You'll need to manually assign a height to the map or it won't be visible.
+
+```css
+  .angular-google-map-container { height: 800px; }
+```
+
 1. You should be able to see the map now.  Try visiting the page.  It should be centered on Satir, Morocco.
-  * If not inspect the documentation and solutions.
+  * If not inspect the errors, documentation and solutions.
 
 ##### Next we need to get the Goat latitude and longitude and display each one on the map.  
 
