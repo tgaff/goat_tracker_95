@@ -2,7 +2,7 @@ angular
   .module('goat-tracker', ['ngRoute', 'uiGmapgoogle-maps'])
   .config(config);
 
-config.$inject = ['$routeProvider', '$locationProvider', 'uiGmapGoogleMapApiProvider']
+config.$inject = ['$routeProvider', '$locationProvider', 'uiGmapGoogleMapApiProvider'];
 function config(   $routeProvider,   $locationProvider,   uiGmapGoogleMapApiProvider  ) {
   $routeProvider
     .when('/', {redirectTo: '/goats'})
@@ -18,9 +18,9 @@ function config(   $routeProvider,   $locationProvider,   uiGmapGoogleMapApiProv
     })
     .otherwise({redirectTo: '/'});
 
-    $locationProvider.html5Mode({
-      enabled: true,
-      requireBase: false
+  $locationProvider.html5Mode({
+    enabled: true,
+    requireBase: false
   });
 
   uiGmapGoogleMapApiProvider.configure({

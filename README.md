@@ -88,16 +88,12 @@ Tools used:
 
 1. Let's install the required libraries using bower.  `bower install --save angular-google-maps`
 
-1. Add an appropriate script tag to your `index.html`.  See the other tags already in there for an example.
+1. Angular-google-maps has dependencies on a module called "lodash" and on a logging module.  Add the following script tags.
   
   ```html
-    <script src="/vendor/angular-google-maps/dist/angular-google-maps.js"></script>
-  ```
-
-1. Angular-google-maps has a dependency on a module called "lodash", we need to make this the first script tag in `index.html`.
-  
-  ```html
-    <script src="/vendor/lodash/lodash.js'></script>
+  <script src="/vendor/lodash/dist/lodash.js"></script>
+  <script src="/vendor/angular-simple-logger/dist/angular-simple-logger.min.js"></script>
+  <script src="/vendor/angular-google-maps/dist/angular-google-maps.js"></script>
   ```
   
 1. In your Angular module declaration, specify the `uiGmapgoogle-maps` dependency.  
