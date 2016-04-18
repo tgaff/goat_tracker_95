@@ -1,8 +1,9 @@
 angular
-  .module('goat-tracker', ['ngRoute'])
+  .module('goat-tracker', ['ngRoute', 'uiGmapgoogle-maps'])
   .config(config);
 
-function config ($routeProvider, $locationProvider) {
+config.$inject = ['$routeProvider', '$locationProvider', 'uiGmapGoogleMapApiProvider']
+function config(   $routeProvider,   $locationProvider,   uiGmapGoogleMapApiProvider  ) {
   $routeProvider
     .when('/', {redirectTo: '/goats'})
     .when('/goats', {
@@ -21,4 +22,10 @@ function config ($routeProvider, $locationProvider) {
       enabled: true,
       requireBase: false
   });
+
+  uiGmapGoogleMapApiProvider.configure({
+    key: 'AIzaSyBHLett8djBo62dDXj0EjCimF8Rd6E8cxg',
+    libraries: 'weather,geometry,visualization'
+  });
+
 }
