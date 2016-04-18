@@ -55,6 +55,15 @@ Add a show page for each goat.  It should be displayed at a URL like `localhost:
 
 Feel free to choose any of the following challenges:
 
+#### Filter challenge
+
+Tools used: 
+* ng-model
+* ng-filter
+
+On the goats index page add a search box. Allow goats to be filtered by name (or any other characteristic).
+
+
 #### CRUD challenge
 
 **Create:** Add a way to submit a new goat.  The API is restful and will respond correctly to `POST /api/goats`.  
