@@ -150,17 +150,19 @@ Tools used:
 ##### Next we need to get the Goat latitude and longitude and display each one on the map.  
 
 
-1. Let's start by adding just one goat.  We can use the [`ui-gmap-marker` directive](https://angular-ui.github.io/angular-google-maps/#!/api/marker) for to put a marker on the map.  Hardcode the following marker inside your google-map. 
+1. Let's start by adding just one goat.  We can use the [`ui-gmap-marker` directive](https://angular-ui.github.io/angular-google-maps/#!/api/marker) for to put a marker on the map.  Hardcode the following *single* marker inside your google-map. 
 
 	```html
-	 <ui-gmap-marker coords="{latitude: 30.725865, longitude: 30.725865,-9.848826}" idkey="1">
+	 <ui-gmap-marker coords="{latitude: 30.725865, longitude: -9.848826}" idkey="1">
 	```
 
 1. Ok, You should see that on the map now.
 
 1. Add $http to your controller and fetch all of the goats from the API. (console.log it)
 
-1. Change the `ui-gmap-marker` directive to make use of all of the goats.  You'll likely need to make use of `ng-repeat` here!
+1. Change the `ui-gmap-marker` directive to make use of all of the goats.  
+
+  > You'll likely need to make use of `ng-repeat` here!
 
   > Make sure idkey is set to the `id` of each goat.
   
