@@ -1,5 +1,7 @@
 # Goat-tracker 95
 
+<img src="/docs/images/screenshot.png" style="max-width: 400"></img>
+
 ### tools needed
 
 * Angular
@@ -10,11 +12,11 @@
   - ng-view
   - $http
 
-  
-  
-  
+
+
+
 ## Getting started
- 
+
 1. Fork & clone the lab.
 1. npm install
 1. bower install
@@ -38,7 +40,7 @@ First off we'll create an index page.
   * the image
   * you can ignore the other attributes here - lets keep the page clean.
 1. Add a link (can be a bootstrap button) to show each goat.  There's nowhere for this to go yet, but you can use a URL like `goats/34`
-  
+
 Once you have this working and all the goats show on the page, proceed to work on the GoatsShow route.
 
 #### GoatsShow
@@ -57,7 +59,7 @@ Feel free to choose any of the following challenges:
 
 #### Filter challenge
 
-Tools used: 
+Tools used:
 * ng-model
 * ng-filter
 
@@ -98,13 +100,13 @@ Tools used:
 1. Let's install the required libraries using bower.  `bower install --save angular-google-maps`
 
 1. Angular-google-maps has dependencies on a module called "lodash" and on a logging module.  Add the following script tags.
-  
+
   ```html
   <script src="/vendor/lodash/dist/lodash.js"></script>
   <script src="/vendor/angular-simple-logger/dist/angular-simple-logger.min.js"></script>
   <script src="/vendor/angular-google-maps/dist/angular-google-maps.js"></script>
   ```
-  
+
 1. In your Angular module declaration, specify the `uiGmapgoogle-maps` dependency.  
 
   ```js
@@ -122,13 +124,13 @@ Tools used:
     libraries: 'weather,geometry,visualization'
   });
   ```
-  
+
 1. Create a new template and GoatsMapController.  Configure a route and link to it from the index page.
 
   > Don't forget that you need to include the script tag for each controller in your layout.
 
 1. In your controller, set a map center to:  30.6928686, -9.8474607
-  
+
   ```js
     vm.mapCenter = { latitude: 30.6928686, longitude: -9.8474607 };
   ```
@@ -137,7 +139,7 @@ Tools used:
   ```js
     vm.mapZoom = 8;
   ```
-  
+
 1. In your template setup the initial map using the [`ui-gmap-google-map` directive](https://angular-ui.github.io/angular-google-maps/#!/api/google-map)
 
 	```html
@@ -159,7 +161,7 @@ Tools used:
 ##### Next we need to get the Goat latitude and longitude and display each one on the map.  
 
 
-1. Let's start by adding just one goat.  We can use the [`ui-gmap-marker` directive](https://angular-ui.github.io/angular-google-maps/#!/api/marker) for to put a marker on the map.  Hardcode the following *single* marker inside your google-map. 
+1. Let's start by adding just one goat.  We can use the [`ui-gmap-marker` directive](https://angular-ui.github.io/angular-google-maps/#!/api/marker) for to put a marker on the map.  Hardcode the following *single* marker inside your google-map.
 
 	```html
 	 <ui-gmap-marker coords="{latitude: 30.725865, longitude: -9.848826}" idkey="1">
@@ -174,10 +176,10 @@ Tools used:
   > You'll likely need to make use of `ng-repeat` here!
 
   > Make sure idkey is set to the `id` of each goat.
-  
+
   > They're pretty close together, consider zooming in further.
-  
- 
+
+
 1. On your own read the [docs for ui-gmap-window](https://angular-ui.github.io/angular-google-maps/#!/api/window) figure out how to add the InfoWindow for each marker.
 
 
