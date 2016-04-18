@@ -1,14 +1,16 @@
 <div class="row">
   <div class="col-md-10 col-sm-12">
-    <img src="{{goatsShowCtrl.goat.image_url}}" alt="goatsShowCtrl.goat.name" class="img-thumbnail">
+    <div ng-show="goatsShowCtrl.alert" class="alert alert-danger" role="alert">{{goatsShowCtrl.alert}}</div>
+    <img src="{{goatsShowCtrl.goat.image_url}}" alt="{{goatsShowCtrl.goat.name}}" class="img-thumbnail">
 </div>
   <div class="col-md-10 col-sm-10 well well-sm">
     <ul class="dl-horizontal">
-      <li>Name: {{goatsShowCtrl.goat.name}}</li>
+      <li>Name: <span ng-model="goatsShowCtrl.goat.name"></span></li>
       <li>Age: {{goatsShowCtrl.goat.ageInMonths}} months</li>
       <li>Color: {{goatsShowCtrl.goat.color}}</li>
       <li>Charisma: {{goatsShowCtrl.goat.charisma}}</li>
     </dl>
     <a class="btn btn-primary" ng-href="/goats"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span> Back</a>
+    <a class="btn btn-danger" ng-click="goatsShowCtrl.deleteGoat(goatsShowCtrl.goat);">Delete</a>
   </div>
 </div>
