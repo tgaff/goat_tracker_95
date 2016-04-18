@@ -1,7 +1,9 @@
 <div class="row">
   <div class="col-md-10">
-    <ui-gmap-google-map center="goatsMapCtrl.mapCenter" zoom="6">
-      <ui-gmap-marker coords="{latitude: 30.725865, longitude: -9.848826}" idkey="1">
+    <ui-gmap-google-map center="goatsMapCtrl.mapCenter" zoom="goatsMapCtrl.mapZoom">
+      <ui-gmap-marker ng-repeat="goat in goatsMapCtrl.goats"
+                      coords="{latitude: goat.latitude, longitude: goat.longitude}"
+                      idkey="goat.id">
       </ui-gmap-marker>
     </ui-gmap-google-map>
   </div>

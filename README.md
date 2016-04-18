@@ -166,6 +166,8 @@ Tools used:
 
   > Make sure idkey is set to the `id` of each goat.
   
+  > They're pretty close together, consider zooming in further.
+  
  
 1. On your own read the [docs for ui-gmap-window](https://angular-ui.github.io/angular-google-maps/#!/api/window) figure out how to add the InfoWindow for each marker.
 
