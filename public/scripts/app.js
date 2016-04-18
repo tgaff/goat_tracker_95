@@ -11,6 +11,11 @@ function config(   $routeProvider,   $locationProvider,   uiGmapGoogleMapApiProv
       controllerAs: 'goatsIndexCtrl',
       controller: 'GoatsIndexController'
     })
+    .when('/goats/map', {
+      templateUrl: '/templates/goats-map.html',
+      controller: 'GoatsMapController',
+      controllerAs: 'goatsMapCtrl'
+    })
     .when('/goats/:id', {
       templateUrl: '/templates/goats-show.html',
       controllerAs: 'goatsShowCtrl',

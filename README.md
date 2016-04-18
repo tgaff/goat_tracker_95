@@ -116,10 +116,12 @@ Tools used:
   
 1. Create a new template and GoatsMapController.  Configure a route and link to it from the index page.
 
+  > Don't forget that you need to include the script tag for each controller in your layout.
+
 1. In your controller, set a map center to:  30.6928686, -9.8474607
   
   ```js
-    vm.mapCenter = { latitude: 30.6928686, longitude: -9.8474607 }
+    vm.mapCenter = { latitude: 30.6928686, longitude: -9.8474607 };
   ```
 1. Set a default zoom level
 
