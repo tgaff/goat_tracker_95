@@ -1,1 +1,3 @@
 .angular-google-map-container { height: 800px; }
+.thumbnail { height: 600px }
+.thumbnail img { max-height: 400px }
