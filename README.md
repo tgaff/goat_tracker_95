@@ -33,7 +33,7 @@ First off we'll create an index page.
 1. Checkout the `/` and `/goats` routes in `app.js`.
 1. Add the required `ng-app` and `ng-view` attributes.
 1. Open the `GoatsIndexController`; fill in the needed details to fetch all of the goats.
-1. Edit the `goats-show.html` template.  For each goat, find a good way to render:
+1. Edit the `goats-index.html` template.  For each goat, find a good way to render:
   * the goat name
   * the image
   * you can ignore the other attributes here - lets keep the page clean.
